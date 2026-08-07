@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<title>Saathi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-app="senior">
+
+  <!-- Persona switcher: stands in for "open the senior device" vs "open the family app".
+       In the real product these would be two separate installs. -->
+  <div class="persona-switch" role="tablist" aria-label="Choose which app to view">
+    <button class="persona-btn" data-persona="senior" role="tab" aria-selected="true">senior companion</button>
+    <button class="persona-btn" data-persona="family" role="tab" aria-selected="false">family dashboard</button>
+  </div>
+
+  <!-- ============================= SENIOR APP ============================= -->
+  <main id="senior-app" class="app senior">
+    <div class="phone">
+
+      <!-- Talk screen -->
+      <section id="senior-talk" class="screen active">
+        <div class="senior-clock" id="senior-clock"></div>
+
+        <button id="mic-btn" class="mic-btn" aria-label="Tap and talk">
+          <svg class="mic-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+            <path d="M19 10v1a7 7 0 0 1-14 0v-1"/>
+            <line x1="12" y1="18" x2="12" y2="22"/>
+            <line x1="9" y1="22" x2="15" y2="22"/>
+          </svg>
+        </button>
+        <p class="mic-caption">tap and talk to me</p>
+
+        <div class="last-said" id="last-said">
+          good morning! I'm here whenever you'd like to chat.
+        </div>
+
+        <form id="talk-form" class="talk-form">
+          <input id="talk-input" type="text" autocomplete="off" placeholder="type what you'd say out loud..." aria-label="Message" />
+          <button type="submit" class="talk-send" aria-label="Send">→</button>
+        </form>
+
+        <nav class="senior-nav">
+          <button class="senior-nav-btn" data-screen="senior-today">
+            <span class="nav-icon" aria-hidden="true">📋</span> today
+          </button>
+          <button class="senior-nav-btn" data-screen="senior-family">
+            <span class="nav-icon" aria-hidden="true">👨‍👩‍👧</span> family
+          </button>
+        </nav>
+
+        <button class="help-btn" id="help-btn">
+          <span aria-hidden="true">☎</span> i need help
+        </button>
+      </section>
+
+      <!-- Today screen -->
+      <section id="senior-today" class="screen">
+        <header class="screen-header">
+          <button class="back-btn" data-back="senior-talk" aria-label="Back">←</button>
+          <h2>today</h2>
+        </header>
+
+        <div id="today-summary" class="today-summary">loading today's routine…</div>
+        <div id="today-list" class="today-list"></div>
+
+        <div class="demo-controls">
+          <p class="demo-label">demo controls — simulate a day</p>
+          <div class="demo-btn-row">
+            <button class="demo-btn" data-day="normal_day">normal day</button>
+            <button class="demo-btn" data-day="anomaly_day">anomaly day</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Family (contacts) screen -->
+      <section id="senior-family" class="screen">
+        <header class="screen-header">
+          <button class="back-btn" data-back="senior-talk" aria-label="Back">←</button>
+          <h2>family</h2>
+        </header>
+        <div id="family-contacts" class="family-contacts">loading family…</div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============================= FAMILY APP ============================= -->
+  <main id="family-app" class="app family">
+    <div class="phone">
+      <section class="screen active">
+        <header class="family-header">
+          <div class="avatar" id="family-avatar">?</div>
+          <div>
+            <p class="family-name" id="family-person-name">loading…</p>
+            <p class="family-updated" id="family-updated">—</p>
+          </div>
+        </header>
+
+        <div id="status-card" class="status-card">
+          <p class="status-line">checking in…</p>
+        </div>
+
+        <div class="quick-actions">
+          <button class="quick-btn" id="call-btn">📞 call now</button>
+          <button class="quick-btn" id="photo-btn">🖼 send photo</button>
+        </div>
+
+        <p class="section-label">recent</p>
+        <div id="recent-list" class="recent-list"></div>
+
+        <div class="demo-controls">
+          <p class="demo-label">demo controls — simulate a day</p>
+          <div class="demo-btn-row">
+            <button class="demo-btn" data-day="normal_day">normal day</button>
+            <button class="demo-btn" data-day="anomaly_day">anomaly day</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

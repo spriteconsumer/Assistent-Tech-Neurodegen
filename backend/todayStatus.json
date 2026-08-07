@@ -1,0 +1,18 @@
+{
+  "normal_day": {
+    "wake": "6:20 AM",
+    "walk_done": true,
+    "breakfast_done": true,
+    "medicine_taken": true,
+    "phone_activity": "normal",
+    "notes": "Called Anita in the evening, watched a bhajan video after dinner."
+  },
+  "anomaly_day": {
+    "wake": "10:20 AM",
+    "walk_done": false,
+    "breakfast_done": false,
+    "medicine_taken": false,
+    "phone_activity": "low",
+    "notes": "Watched TV most of the day, did not open the phone much."
+  }
+}
