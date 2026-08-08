@@ -34,8 +34,8 @@ The backend calls **Gemini** first for every chat/family-update request, and aut
 
 ## What's real vs. stubbed
 
-Wired end-to-end: companion chat, today's routine, family contacts, family status card, family-update narrative, and the demo day-simulation toggle — all backed by the actual API.
+Wired end-to-end: companion chat (with persisted, resumable, expandable conversation history), a persisted daily routine checklist with a gentle AI check-in when something's left unchecked, real voice input via the Web Speech API, a grouped family memory gallery, a two-minute box breathing exercise, a soothing-sounds player, today's routine anomaly view, family contacts, family status card, family-update narrative, and the demo day-simulation toggle — all backed by the actual API (except breathing and sounds, which are intentionally client-side only).
 
-Stubbed (UI only, no backend yet): the senior's "I need help" button and the family app's "call now" / "send photo" buttons. Both apps' data is currently seeded from `backend/lifeGraph.json` and `backend/todayStatus.json` rather than a real device/sensor feed — see `backend/README.md` for what that would take to make real.
+Stubbed (UI only, no backend yet): the senior's "I need help" button and the family app's "call now" / "send photo" buttons. Both apps' data is currently seeded from `backend/lifeGraph.json` and `backend/todayStatus.json` rather than a real device/sensor feed — see `backend/README.md` for what that would take to make real. The memory gallery uses placeholder photo URLs rather than a real upload flow.
 
 See `backend/README.md` and `frontend/README.md` for details specific to each half.
