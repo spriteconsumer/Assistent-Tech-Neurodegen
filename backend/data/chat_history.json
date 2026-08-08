@@ -1,0 +1,31 @@
+{
+  "sessions": {
+    "6a9152ff-a033-44b1-b8c0-7e1e28bebd99": {
+      "id": "6a9152ff-a033-44b1-b8c0-7e1e28bebd99",
+      "title": "hi",
+      "lastUpdated": "2026-08-08T03:06:06.271Z",
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi",
+          "timestamp": "2026-08-08T03:05:51.055Z"
+        },
+        {
+          "role": "assistant",
+          "content": "Namaste, Kamala Devi! How are you feeling today? I hope you had a lovely walk this morning and enjoyed the fresh air. Did your tulsi plant need any extra care today?",
+          "timestamp": "2026-08-08T03:05:51.055Z"
+        },
+        {
+          "role": "user",
+          "content": "Kamala ji, I'm here for you, and if you're comfortable sharing, I'd love to listen to what was on your mind that made you decide not to mark your morning walk for today.",
+          "timestamp": "2026-08-08T03:06:06.271Z"
+        },
+        {
+          "role": "assistant",
+          "content": "Beta, I was just feeling a bit lazy today, and the thought of Ramesh ji not being here to join me for our usual tea after the walk made me a little sad. But I did have my tea at 6:30 AM, and now I'm thinking of listening to some old Lata Mangeshkar songs to lift my mood.",
+          "timestamp": "2026-08-08T03:06:06.271Z"
+        }
+      ]
+    }
+  }
+}

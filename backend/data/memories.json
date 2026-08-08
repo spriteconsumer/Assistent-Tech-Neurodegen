@@ -1,0 +1,44 @@
+[
+  {
+    "id": "mem-ganga-diwali",
+    "url": "https://picsum.photos/seed/ganga-diwali/600/600",
+    "caption": "Went to the Ganga every Diwali with her father as a child in Jaipur",
+    "date": "1958-11-01",
+    "group": "Childhood"
+  },
+  {
+    "id": "mem-wedding-1968",
+    "url": "https://picsum.photos/seed/wedding-1968/600/600",
+    "caption": "Married Ramesh in 1968 in a haveli courtyard wedding",
+    "date": "1968-02-14",
+    "group": "Ramesh"
+  },
+  {
+    "id": "mem-poha-lesson",
+    "url": "https://picsum.photos/seed/poha-lesson/600/600",
+    "caption": "Learned to cook poha from her mother-in-law soon after marriage",
+    "date": "1968-06-20",
+    "group": "Ramesh"
+  },
+  {
+    "id": "mem-goa-1998",
+    "url": "https://picsum.photos/seed/goa-1998/600/600",
+    "caption": "Took the whole family to Goa in 1998 — Rohan's first time seeing the sea",
+    "date": "1998-05-10",
+    "group": "Rohan"
+  },
+  {
+    "id": "mem-anita-graduation",
+    "url": "https://picsum.photos/seed/anita-graduation/600/600",
+    "caption": "Anita's college graduation day in Bengaluru",
+    "date": "2001-06-15",
+    "group": "Anita"
+  },
+  {
+    "id": "mem-atharv-first-visit",
+    "url": "https://picsum.photos/seed/atharv-visit/600/600",
+    "caption": "Atharv's first visit to Jaipur, chasing pigeons in the courtyard",
+    "date": "2023-12-24",
+    "group": "Atharv"
+  }
+]

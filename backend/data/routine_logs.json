@@ -1,0 +1,12 @@
+{
+  "2026-08-08": {
+    "date": "2026-08-08",
+    "completions": {
+      "tea": true,
+      "walk": true,
+      "breakfast": true,
+      "medicine": true
+    },
+    "updatedAt": "2026-08-08T03:07:12.633Z"
+  }
+}
